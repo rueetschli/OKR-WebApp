@@ -1,0 +1,20 @@
+{
+    "workspaces": [
+        {
+            "name": "Test01",
+            "file": "test01_data.json",
+            "protected": false
+        },
+        {
+            "name": "Test02",
+            "file": "test02_data.json",
+            "protected": true,
+            "password_hash": "$2y$10$Dm9KvMZXUBN6ryjy1WeM6.08VF8WQwUpmQEnxb4BEb7xR4s9UObzO"
+        },
+        {
+            "name": "asdfasdfasdf",
+            "file": "asdfasdfasdf_data.json",
+            "protected": false
+        }
+    ]
+}
