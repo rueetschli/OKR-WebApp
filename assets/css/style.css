@@ -7,11 +7,9 @@ html, body {
     background: #f7f7f7;
     color: #333;
 }
-
 *, *::before, *::after {
     box-sizing: inherit;
 }
-
 body {
     font-size: 16px;
     line-height: 1.5;
@@ -24,7 +22,6 @@ header {
     padding: 1rem;
     text-align: center;
 }
-
 header h1 {
     margin: 0;
     font-size: 1.5rem;
@@ -37,7 +34,7 @@ main {
     padding: 0 1rem;
 }
 
-/* Einfuehrungsbereich */
+/* Einführungsbereich */
 .intro p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
@@ -49,13 +46,11 @@ main {
     font-size: 1.2rem;
     color: #333;
 }
-
 .workspace-list ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .workspace-item {
     background: #fff;
     margin: 0.5rem 0;
@@ -63,18 +58,15 @@ main {
     border: 1px solid #ddd;
     transition: background 0.3s;
 }
-
 .workspace-item a {
     display: block;
     padding: 0.75rem 1rem;
     color: #333;
     text-decoration: none;
 }
-
 .workspace-item a:hover {
     background: #e9ecef;
 }
-
 .protected-info {
     font-size: 0.9rem;
     color: #888;
@@ -99,7 +91,6 @@ main {
     font-size: 1rem;
     transition: background 0.3s;
 }
-
 .button:hover {
     background: #3b5470;
 }
@@ -118,15 +109,14 @@ footer {
     header h1 {
         font-size: 1.2rem;
     }
-
     .button {
         font-size: 0.9rem;
     }
-
     .workspace-item a {
         font-size: 0.9rem;
     }
 }
+
 /* Formular-Styles */
 form {
     max-width: 400px;
@@ -136,18 +126,17 @@ form {
     border-radius: 4px;
     margin-top: 1rem;
 }
-
 form label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: #333;
 }
-
 form input[type="text"],
 form input[type="password"],
 form input[type="email"],
-form input[type="number"] {
+form input[type="number"],
+form input[type="date"] {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
@@ -156,15 +145,14 @@ form input[type="number"] {
     font-size: 1rem;
     transition: border-color 0.3s;
 }
-
 form input[type="text"]:focus,
 form input[type="password"]:focus,
 form input[type="email"]:focus,
-form input[type="number"]:focus {
+form input[type="number"]:focus,
+form input[type="date"]:focus {
     border-color: #2E4053;
     outline: none;
 }
-
 form button[type="submit"] {
     background: #2E4053;
     color: #fff;
@@ -175,13 +163,14 @@ form button[type="submit"] {
     cursor: pointer;
     transition: background 0.3s;
 }
-
 form button[type="submit"]:hover {
     background: #3b5470;
-}.workspace-detail h2 {
-    margin-top: 1.5rem;
 }
 
+/* Workspace Details */
+.workspace-detail h2 {
+    margin-top: 1.5rem;
+}
 .objective-item {
     background: #fff;
     border: 1px solid #ddd;
@@ -189,21 +178,9 @@ form button[type="submit"]:hover {
     padding: 1rem;
     border-radius: 4px;
 }
-
 .objective-item h4 {
     margin: 0 0 0.5rem 0;
-}.objective-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 1rem;
-    margin-bottom: 1rem;
 }
-
-.objective-item h4 {
-    margin-top: 0;
-}
-
 #add-objective-form {
     background: #fff;
     border: 1px solid #ddd;
@@ -211,48 +188,46 @@ form button[type="submit"]:hover {
     padding: 1rem;
     margin-top: 1rem;
 }
-
 #add-objective-form textarea {
     resize: vertical;
-}/* Modale */
+}
+
+/* Modale */
 .modal {
     position: fixed;
-    top:0; left:0;
-    width:100%; height:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0,0,0,0.5);
-    padding-top:60px;
-    display:flex;
-    justify-content:center;
-    align-items:start;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
-
 .modal-content {
-    background:#fff;
-    padding:1rem;
-    border-radius:4px;
-    max-width:400px;
-    width:90%;
-    position:relative;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
 }
-
 .modal-content h3 {
-    margin-top:0;
+    margin-top: 0;
 }
-
 .btn-sm {
-    font-size:0.8rem;
-    padding:0.3rem 0.5rem;
-    margin:0.2rem;
-    display:inline-block;
-    vertical-align:middle;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    margin: 0.2rem;
+    display: inline-block;
+    vertical-align: middle;
 }
-
 .btn-red {
-    background:#c0392b;
+    background: #c0392b;
 }
-
 .btn-red:hover {
-    background:#e74c3c;
+    background: #e74c3c;
 }
 #workspace-controls {
     display: flex;
@@ -260,22 +235,100 @@ form button[type="submit"]:hover {
     gap: 0.5rem;
     align-items: center;
 }
-
 #workspace-controls input[type="text"] {
     padding: 0.3rem;
     border: 1px solid #ccc;
     border-radius: 3px;
     width: 200px;
 }
-
 #workspace-pagination {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-
 #page-info {
     display: inline-block;
     min-width: 100px;
     text-align: center;
+}
+
+/* Fortschrittsanzeige */
+.progress-container {
+    background: #e9ecef;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+    height: 20px;
+    position: relative;
+}
+.progress-bar {
+    height: 100%;
+    transition: width 0.3s;
+}
+.progress-container span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Key Result Styles */
+.kr-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+.kr-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+}
+.kr-desc {
+    flex: 2;
+}
+.kr-progress {
+    flex: 0 0 60px;
+    text-align: right;
+    margin-right: 1rem;
+}
+.kr-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+.kr-btn:focus {
+    outline: 2px solid #2E4053;
+}
+
+/* Check-In Styles */
+.checkin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.checkin-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+}
+.checkin-date {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+.checkin-notes {
+    margin-left: 1rem;
+}
+
+/* Objective Status Text */
+.objective-status {
+    font-weight: bold;
+    margin-top: 0.5rem;
 }
