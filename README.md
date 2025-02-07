@@ -2,6 +2,9 @@
 
 Diese OKR-WebApp bietet eine einfache Möglichkeit, Objectives und Key Results für verschiedene Teams und Benutzer zu verwalten – ganz ohne Datenbank. Daten werden in JSON-Dateien gespeichert. Die Anwendung ist schlank, läuft auf gängigen Shared-Hostings und erfordert lediglich PHP und Zugriff per FTP.
 
+## Was ist OKR?
+Ich habe einen ausführlichen Blogpost über [OKR - Mit klaren Zielen in die Zukunft](https://www.rueetschli.net/p/okr-webapp-mit-klaren-zielen-in-die) geschreiben. 
+
 ## Features
 
 - **Workspaces:** Erstellen mehrerer Arbeitsbereiche (Workspaces), jeder mit eigenem Namensraum.
