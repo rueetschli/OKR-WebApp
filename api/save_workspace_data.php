@@ -28,7 +28,7 @@ if (!$workspace) {
     json_response(["success" => false, "error" => "Workspace nicht gefunden."]);
 }
 
-// Wenn der Workspace geschützt ist, prüfen ob authentifiziert
+// Bei geschütztem Workspace Authentifizierung prüfen
 if (isset($workspace['protected']) && $workspace['protected'] === true && !is_authenticated($name)) {
     json_response(["success" => false, "error" => "Zugriff verweigert. Bitte authentifizieren."]);
 }
