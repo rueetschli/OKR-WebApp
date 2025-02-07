@@ -45,6 +45,9 @@ Passwörter werden mit `password_hash()` und `password_verify()` geprüft. Gesch
 - Anpassbare Berechtigungsmodelle oder Rollen.
 - Design-Verbesserungen über das CSS-Stylesheet.
 
+<img width="461" alt="image" src="https://github.com/user-attachments/assets/fb4fda74-0426-476c-8432-e6e5b361047b" />
+
+
 ## Support
 
 Bei Fragen oder Problemen bitte ein Issue erstellen. Diese App ist als Beispiel konzipiert und kann nach eigenen Bedürfnissen angepasst werden.
