@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             createWorkspace(name, pwd).then(data => {
                 if (data.success) {
-                    // Nach erfolgreichem Erstellen direkt weiterleiten
+                    // Weiterleitung zum neuen Workspace
                     const wsName = encodeURIComponent(data.workspace.name);
                     location.href = 'workspace.php?name=' + wsName;
                 } else {
@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const startIndex = (currentPage - 1)*pageSize;
-        const endIndex = Math.min(startIndex+pageSize, total);
+        const startIndex = (currentPage - 1) * pageSize;
+        const endIndex = Math.min(startIndex + pageSize, total);
         const pageItems = filteredWorkspaces.slice(startIndex, endIndex);
 
         pageItems.forEach(ws => {
